@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: #06080A;
+body {
+  background: #06080a;
 }
-main{
+main {
   margin-top: 80px;
   color: white;
 }
