@@ -1,15 +1,15 @@
 import '@/styles/globals.css'
 import Layout from '@/components/layout'
 import { AppProvider } from '../../context/AppContext'
-import { AuthContext } from '../../context/AuthContext'
+import { AuthContext, AuthProvider } from '../../context/AuthContext'
 export default function App({ Component, pageProps }) {
   return (
-    <AuthContext>
+    <AuthProvider>
       <AppProvider>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </AppProvider>
-    </AuthContext>
+    </AuthProvider>
   )
 }
